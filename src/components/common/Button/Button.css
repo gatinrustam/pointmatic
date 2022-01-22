@@ -1,0 +1,46 @@
+.button-wrap {
+    display: flex;
+}
+
+.button {
+    font-size: 16px;
+    color: #2A2F35;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.button:hover {
+    background-color: #E4EBF3;
+}
+
+.button__default {
+    padding: 0 36px 2px;
+    background-color: #ECF1F7;
+    border: 2px solid #ECF1F7;
+}
+
+.button__small {
+    padding: 0 8px 2px;
+    background-color: #f9fafc;
+    border: 2px solid #f9fafc;
+}
+
+.button__outline {
+    background-color: unset;
+    border: 2px solid #ECF1F7;
+}
+
+.button__transparent {
+    background-color: unset;
+    border: none;
+    text-decoration: underline;
+}
+
+.button__image {
+    margin-left: 4px;
+}
