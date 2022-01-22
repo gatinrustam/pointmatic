@@ -1,0 +1,38 @@
+.header {
+    box-shadow: 0 2px 10px #ECF1F7;
+    padding: 0 16px;
+}
+
+.header__in {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.header__logo {
+    max-width: 210px;
+    min-width: 160px;
+    margin-right: 72px;
+}
+
+@media (max-width: 1024px) {
+    .header__logo {
+        margin-right: 48px;
+    }
+}
+
+.header__logo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.header__relations {
+    display: flex;
+    grid-gap: 12px;
+    align-items: center;
+    margin-left: auto;
+}

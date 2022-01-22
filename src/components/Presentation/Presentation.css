@@ -1,0 +1,36 @@
+.presentation {
+    width: 100%;
+    padding: 0 16px;
+}
+
+.presentation__in {
+    border-radius: 15px;
+    height: 600px;
+    max-width: 1200px;
+    margin: 24px auto 0;
+    background-size: cover;
+    background-position: bottom right;
+    padding: 0 48px;
+    display: flex;
+    align-items: center;
+}
+
+.presentation__content {
+    width: 45%;
+}
+
+.presentation__title {
+    font-size: 42px;
+    margin-bottom: 24px;
+}
+
+.presentation__description {
+    line-height: 24px;
+    margin-bottom: 24px;
+    font-size: 18px;
+}
+
+.presentation__button {
+    display: flex;
+    flex-direction: row;
+}
