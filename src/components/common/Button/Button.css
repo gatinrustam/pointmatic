@@ -12,10 +12,7 @@
     align-items: center;
     justify-content: center;
     height: 40px;
-}
-
-.button:hover {
-    background-color: #E4EBF3;
+    transition: background 250ms ease-in-out;
 }
 
 .button__default {
@@ -23,11 +20,20 @@
     background-color: #ECF1F7;
     border: 2px solid #ECF1F7;
 }
+.button__default:hover {
+    padding: 0 36px 2px;
+    background-color: #E4EBF3;
+    border: 2px solid #E4EBF3;
+}
 
 .button__small {
     padding: 0 8px 2px;
     background-color: #f9fafc;
     border: 2px solid #f9fafc;
+}
+.button__small:hover {
+    background-color: #E4EBF3;
+    border: 2px solid #E4EBF3;
 }
 
 .button__outline {
@@ -39,6 +45,11 @@
     background-color: unset;
     border: none;
     text-decoration: underline;
+}
+.button__transparent:hover {
+    background-color: unset;
+    border: none;
+    text-decoration: none;
 }
 
 .button__image {

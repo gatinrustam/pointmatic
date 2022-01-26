@@ -12,10 +12,7 @@
     align-items: center;
     height: 40px;
     text-transform: capitalize;
-}
-
-.language__button:hover {
-    background-color: #E4EBF3;
+    transition: background 250ms ease-in-out;
 }
 
 .language__icon {
@@ -31,6 +28,11 @@
 .language__small {
     padding: 10px 7px 11px;
     background-color: #f9fafc;
+    border: 2px solid #f9fafc;
+}
+.language__small:hover {
+    background-color: #E4EBF3;
+    border: 2px solid #E4EBF3;
 }
 
 .language__body {
@@ -38,7 +40,6 @@
     position: absolute;
     top: calc(100% + 8px);
     right: 0;
-    padding: 10px 12px;
     background-color: #f9fafc;
     border-radius: 8px;
     box-shadow: 0px 2px 2px #a9b6c1;
@@ -49,6 +50,16 @@
 }
 
 .language__body li {
-    padding: 10px 8px;
+    padding: 10px 24px;
     list-style: none;
+    cursor: pointer;
+}
+.language__body li:first-child {
+    border-radius: 8px 8px 0 0;
+}
+.language__body li:last-child {
+    border-radius: 0 0 8px 8px;
+}
+.language__body li:hover {
+    background-color: #E4EBF3;
 }
