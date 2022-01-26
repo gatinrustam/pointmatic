@@ -4,6 +4,10 @@ const { SourceMapDevToolPlugin } = require("webpack");
 
 module.exports = {
     entry: "./src/index.js",
+    devServer: {
+        host: 'localhost',
+        port: 3000,
+    },
     output: {
         path: path.join(__dirname, "/dist"),
         filename: "index_bundle.js"

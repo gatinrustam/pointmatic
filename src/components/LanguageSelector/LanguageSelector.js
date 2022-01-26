@@ -13,26 +13,26 @@ const AVAILABLE_LANGUAGES = [
         "locale": "ru",
         "name": "Русский"
     },
-    {
-        "locale": "de",
-        "name": "Deutsch"
-    },
-    {
-        "locale": "be",
-        "name": "Беларуская"
-    },
-    {
-        "locale": "ua",
-        "name": "Українська"
-    },
+    // {
+    //     "locale": "de",
+    //     "name": "Deutsch"
+    // },
+    // {
+    //     "locale": "be",
+    //     "name": "Беларуская"
+    // },
+    // {
+    //     "locale": "ua",
+    //     "name": "Українська"
+    // },
 ]
 
 export default function LanguageSelector() {
     const { t, i18n } = useTranslation();
 
     const changeLanguage = (event) => {
-        i18n.changeLanguage(event.target.value);
-        console.log(event.target);
+        i18n.changeLanguage(event.target.dataset.locale);
+        console.log(event.target.dataset.locale);
         setCurrentLang(event.target.dataset.locale);
         setActive(prev => !prev);
     };
