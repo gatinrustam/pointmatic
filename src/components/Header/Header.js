@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import Menu from '../Menu/Menu';
 import Button from '../common/Button/Button';
 import LanguageSelector from '../LanguageSelector/LanguageSelector';
@@ -14,9 +15,9 @@ export default function Header(){
     return (
         <div className="header">
             <div className="header__in">
-                <a href="/" className="header__logo">
+                <Link to="/" className="header__logo">
                     <img src={ReactLogo} alt="React Logo" />
-                </a>
+                </Link>
 
                 <Menu />
 

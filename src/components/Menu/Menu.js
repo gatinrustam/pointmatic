@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 
 import './Menu.css';
@@ -10,13 +11,19 @@ export default function Menu(){
         <nav className="menu">
             <ul className="menu__list">
                 <li className="menu__item">
-                    <a href="/">{t('header.menu.solutions')}</a>
+                    <Link to="/solutions">
+                        {t('header.menu.solutions')}
+                    </Link>
                 </li>
                 <li className="menu__item">
-                    <a href="/">{t('header.menu.tariffs')}</a>
+                    <Link to="/tariffs">
+                        {t('header.menu.tariffs')}
+                    </Link>
                 </li>
                 <li className="menu__item">
-                    <a href="/">{t('header.menu.company')}</a>
+                    <Link to="/company">
+                        {t('header.menu.company')}
+                    </Link>
                 </li>
             </ul>
         </nav>
