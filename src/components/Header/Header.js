@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import Menu from '../Menu/Menu';
+import Menu from './components/Menu/Menu';
 import Button from '../common/Button/Button';
-import LanguageSelector from '../LanguageSelector/LanguageSelector';
+import LanguageSelector from './components/LanguageSelector/LanguageSelector';
 import { useTranslation } from 'react-i18next';
 
 import ReactLogo from './img/logo.svg';
@@ -28,7 +28,10 @@ export default function Header(){
                         icon={SupportHeadphone}
                     />
                     <LanguageSelector />
-                    <Button text={t('header.menu.cabinet')} />
+                    <Button
+                        text={t('header.menu.cabinet')}
+                        to={"/auth"}
+                    />
                 </div>
             </div>
         </div>
