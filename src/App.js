@@ -1,26 +1,24 @@
 import React from "react";
-import Header from './components/Header/Header';
-import Presentation from "./components/Presentation/Presentation";
-import { useTranslation } from 'react-i18next';
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Main from "./components/Main/Main";
+import Solutions from "./components/Solutions/Solutions";
+import Tariffs from "./components/Tariffs/Tariffs";
+import Company from "./components/Company/Company";
+import Auth from "./components/Auth/Auth";
 
 import "./common/css/vars.css";
 import "./App.css";
 
 export default function App() {
-    const { t, i18n } = useTranslation();
-
     return (
-        <>
-            <Header />
-            <Presentation
-                title={t('welcome.title')}
-                desc={t('welcome.desc')}
-                button={{
-                    key: t('welcome.button.demo'),
-                    url: "/lk",
-                }}
-            />
-        </>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/solutions" element={<Solutions />} />
+            <Route path="/tariffs" element={<Tariffs />} />
+            <Route path="/company" element={<Company />} />
+            <Route path="/auth" element={<Auth />} />
+          </Routes>
+        </BrowserRouter>
     )
 }

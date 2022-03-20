@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { useTranslation } from "react-i18next";
 
-import DropdownArrow from '../../img/icons/dropdown-arrow.svg';
+// import DropdownArrow from '../../img/icons/dropdown-arrow.svg';
 import './LanguageSelector.css';
 
 const AVAILABLE_LANGUAGES = [
@@ -50,7 +50,8 @@ export default function LanguageSelector() {
                 className="language__button language__small"
                 onClick={onClickHandler}
             >
-                {currentLang} <img src={DropdownArrow} className="language__icon" />
+                {currentLang}
+                {/* <img src={DropdownArrow} className="language__icon" /> */}
             </div>
             <div className="language__body">
                 <ul>

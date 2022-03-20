@@ -1,0 +1,23 @@
+.auth {
+    width: 100%;
+    padding: 0 16px;
+}
+
+.authIn {
+    max-width: 1200px;
+    margin: 24px auto 0;
+}
+
+.authForm {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.authInput {
+    width: 100%;
+}
+
+.title {
+    margin-bottom: 24px;
+}
