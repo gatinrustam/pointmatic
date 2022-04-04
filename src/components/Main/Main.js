@@ -12,8 +12,6 @@ export default function Main() {
         <>
             <Header />
 
-            <Input type="password" />
-
             <Presentation
                 title={t('welcome.title')}
                 desc={t('welcome.desc')}
